@@ -18,5 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('signature_pad', [SignatureController::class, 'index']);
-Route::post('signature_pad', [SignatureController::class, 'store'])->name('signature_pad.store');
+Route::resource('signature_pad', SignatureController::class);
