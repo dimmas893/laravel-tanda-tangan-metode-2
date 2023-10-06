@@ -29,4 +29,12 @@ class SignatureController extends Controller
         file_put_contents($file, $image_base64);
         return back()->with('success', 'Signature store successfully !!');
     }
+    
+    public function update(){
+        //
+    }
+
+    public function delete(){
+        //
+    }
 }
